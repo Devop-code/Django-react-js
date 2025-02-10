@@ -4,6 +4,7 @@ import api from "../api";
 import { REFRESH_TOKEN, ACCESS_TOKEN } from "../constants";
 import { useState,useEffect } from "react";
 
+// eslint-disable-next-line react/prop-types
 function ProtectedRoute({ children }) {
     useEffect(()=>{
           auth().catch(()=>setAuthorized(false))
