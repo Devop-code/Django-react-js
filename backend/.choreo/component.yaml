@@ -1,7 +1,8 @@
 schemaVersion: 1.0 
  # Example endpoint configuration
 endpoints:
-- name: endpoints
-  service:
-     port: <SERVICE_PORT>
-  type: REST
+ - name: "REST API"
+   port: 8000
+   type: REST
+   networkVisibility: Public
+   context: /
