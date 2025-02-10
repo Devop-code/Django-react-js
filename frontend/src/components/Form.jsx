@@ -2,7 +2,8 @@ import { useState } from "react";
 import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
-function from({ route, method }) {
+import "../style/Form.css"
+function Form({ route, method }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -50,9 +51,10 @@ function from({ route, method }) {
         placeholder="password"
       />
 
-      <button className="form-input" type="submit">
+      <button className="form-button" type="submit">
         {name}
       </button>
     </form>
   );
 }
+export default Form

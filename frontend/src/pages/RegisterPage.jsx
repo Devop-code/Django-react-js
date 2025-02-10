@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Form from '../components/Form'
 const RegisterPage = () => {
   return (
-    <div>RegisterPage</div>
+    <Form route="/api/user/register/" method="register"/>
   )
 }
 

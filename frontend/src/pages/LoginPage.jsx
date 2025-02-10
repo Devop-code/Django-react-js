@@ -1,7 +1,8 @@
 import React from 'react'
+import Form from '../components/Form'
  const LoginPage = () => {
   return (
-    <div>LoginPage</div>
+    <Form route="/api/token/" method="login"/>
   )
 }
 export default LoginPage
