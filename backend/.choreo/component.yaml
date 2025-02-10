@@ -1,7 +1,7 @@
 schemaVersion: 1.0 
  # Example endpoint configuration
 endpoints:
-- name: my-service-endpoint
+- name: endpoints
   service:
      port: <SERVICE_PORT>
   type: REST
